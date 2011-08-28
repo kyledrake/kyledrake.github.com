@@ -56,6 +56,7 @@
       body {
         background: #3B627E;
         padding-top: 30px;
+        text-align: center;
       }
 
       #content {
@@ -77,10 +78,16 @@
         float: right;
       }
 
-      #title h1 {
+      h1 {
         font-size: 3.5em;
         font-family: 'Cabin Sketch', arial, serif;
       }
+      
+      h2 {
+        font-size: 1em;
+        font-family: arial, sans-serif;
+      }
+
 
       a:link {text-decoration: none; color: #0000FF;}
       a:visited {text-decoration: none; color: #0000FF;}
@@ -100,7 +107,12 @@
         <h1>KYLE DRAKE'S</h1>
         <h1 style="width: 130px;"><a id="source_link" href="http://github.com/kyledrake">SOURCE CODE</a></h1>
       </div>
-      <div style="clear:both"></div>
+      <div style="clear:both; padding-bottom: 20px;"></div>
+      
+      <h1 style="padding-bottom: 20px;">ARTICLES</h1>
+      <div id="articles" style="padding-bottom: 20px;">
+        <h2><a href="#">Sinatra::Synchrony - Concurrency in Ruby without resorting to radical programming shifts</a></h2>
+      </div>
     </div>
     <script type="text/javascript">
       $('#source_link').mouseover(function() {
