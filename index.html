@@ -1,115 +1,76 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <style>
-      /* http://meyerweb.com/eric/tools/css/reset/
-         v2.0 | 20110126
-         License: none (public domain)
-      */
-
-      html, body, div, span, applet, object, iframe,
-      h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-      a, abbr, acronym, address, big, cite, code,
-      del, dfn, em, img, ins, kbd, q, s, samp,
-      small, strike, strong, sub, sup, tt, var,
-      b, u, i, center,
-      dl, dt, dd, ol, ul, li,
-      fieldset, form, label, legend,
-      table, caption, tbody, tfoot, thead, tr, th, td,
-      article, aside, canvas, details, embed,
-      figure, figcaption, footer, header, hgroup,
-      menu, nav, output, ruby, section, summary,
-      time, mark, audio, video {
-      	margin: 0;
-      	padding: 0;
-      	border: 0;
-      	font-size: 100%;
-      	font: inherit;
-      	vertical-align: baseline;
-      }
-      /* HTML5 display-role reset for older browsers */
-      article, aside, details, figcaption, figure,
-      footer, header, hgroup, menu, nav, section {
-      	display: block;
-      }
-      body {
-      	line-height: 1;
-      }
-      ol, ul {
-      	list-style: none;
-      }
-      blockquote, q {
-      	quotes: none;
-      }
-      blockquote:before, blockquote:after,
-      q:before, q:after {
-      	content: '';
-      	content: none;
-      }
-      table {
-      	border-collapse: collapse;
-      	border-spacing: 0;
-      }
-      /* CSS Reset end */
-
-      body {
-        background: #3B627E;
-        padding-top: 30px;
-        padding-bottom: 30px;
-      }
-
-      #content {
-        background: #FFFFFF;
-        margin-left: auto;
-        margin-right: auto;
-        width: 700px;
-        height: 100%;
-        border-radius: 5px;
-        padding: 10px;
-      }
-
-      img {
-        float: left;
-        border-radius: 20px;
-      }
-
-      #title {
-        float: right;
-      }
-
-      #title h1 {
-        font-size: 3.5em;
-        font-family: 'Cabin Sketch', arial, serif;
-      }
-
-      a:link {text-decoration: none; color: #0000FF;}
-      a:visited {text-decoration: none; color: #0000FF;}
-      a:active {text-decoration: none}
-      a:hover {text-decoration: none; color: #FF0000;}
-
-      article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
-    </style>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-    <title>Kyle Drake</title>
-    <link href='http://fonts.googleapis.com/css?family=Cabin+Sketch:bold' rel='stylesheet' type='text/css'>
+    <title>Kyle Drake's Web Archive</title>
+    
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="assets/bootstrap/google-code-prettify/prettify.css" rel="stylesheet">
+    <link href="assets/css/screen.css" rel="stylesheet">
   </head>
-  <body>
-    <div id="content">
-      <img src="img/me.jpg">
-      <div id="title">
-        <h1>KYLE DRAKE'S</h1>
-        <h1 style="width: 130px;"><a id="source_link" href="http://github.com/kyledrake" rel="me">SOURCE CODE</a></h1>
+  <body data-spy="scroll" data-target=".subnav" data-offset="50">
+    <div class="container">
+      <header class="jumbotron masthead">
+        <div class="inner">
+          <h1>Kyle Drake's Web Archive</h1>
+          <p>Startups, Software Engineering, Economics, Bitcoin, GIS, Low Power Radio, misc</p>
+        </div>
+      </header>
+
+      <hr class="soften">
+
+      <div class="links">
+        <div class="row">
+          <div class="span4">
+            <h1><a href="https://github.com/kyledrake">Source Code</a></h1>
+            My public source code repository is located here. I prefer MIT license for my public work, so feel free to browse and fork projects, there are minimal restrictions.
+          </div>
+
+          <div class="span4">
+            <h1><a href="https://slideshare.net/kyledrake">Slide Decks</a></h1>
+            All slide shows I have for presentations at conferences are available here.
+          </div>
+
+          <div class="span4">
+            <h1><a href="writings.html">Writings</a></h1>
+            My writings and links to articles I've written will go here. This page is not populated yet.
+          </div>
+
+        </div><!-- row -->
+
+        <div class="row">
+
+          <div class="span4">
+            <h1><a href="articles.html">Articles</a></h1>
+            Any interesting articles and links I want to persist will go here. This page does not have any information yet.
+          </div>
+
+          <div class="span4">
+            <h1><a href="low-power-radio.html">Low Power Radio</a></h1>
+            A long time ago, I wrote a book on Low Power AM (LPAM) radio, because there weren't any resources available at the time. I am working on transitioning it to a wiki so radio hackers can help me improve the content. I also designed a few AM transmitters, and the schematics for them are available here.
+          </div>
+
+        </div>
+
+      <div class="row">
+        <div class="span4">
+          <h1><a href="https://twitter.com/kyledrake">Twitter</a></h1>
+          I post here from time to time, but I prefer social networks with less restrictions on the amount of text you can write, so I don't use it super often.
+        </div>
+        
+        <div class="span4">
+          <h1><a href="http://www.linkedin.com/profile/view?id=10332632">Linkedin</a></h1>
+          My Github repository is my real "resume", but I keep this around incase for people that need more formal information about my work history.
+        </div>
+        
+        <div class="span4">
+          <h1>Contact</h1>
+          kyledrake | gmail.com
+        </div>
       </div>
-      <div style="clear:both"></div>
     </div>
-    <script type="text/javascript">
-      $('#source_link').mouseover(function() {
-        $(this).text('HAUNTED JUNKYARD');
-      });
-      $('#source_link').mouseout(function () {
-        $(this).text('SOURCE CODE');
-      });
-    </script>
   </body>
+
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/google-code-prettify/prettify.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </html>
