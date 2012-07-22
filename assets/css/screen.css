@@ -42,3 +42,7 @@
 .row {
   margin-bottom: 20px;
 }
+
+small {
+  font-size: 10px;
+}
